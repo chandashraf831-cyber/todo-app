@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todo webpage</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css" integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="todo.css" rel="stylesheet">
+</head>
+<body>
+    <div id="container">
+            <header id="header">
+          <div id="header-div">
+       <diV class="bagicon">
+<i class="fa-solid fa-bag-shopping"></i>
+        </diV>
+            <h1>My<span>Todo</span>App</h1>
+          </div>
+        <div class="heading-p">
+<p>Plan . Focus . get Things Done</p>
+        </div>
+    </header>
+    <main>
+        <section id="section-one">
+            <div class="add">
+                <form><input id="text" type="text" placeholder="Add a New task" required></form>
+            </div>
+            <div class="add-task">
+                <button type="submit" class="txtbtn">
+                Add Task
+            </button>
+            </div>
+        </section>
+        <section id="section-two">     
+        <div class="btn-section">
+        <button type="submit" class="all"><span>All</span></button>
+             <button type="submit" class="active"><span>Active</span></button>
+             <button type="submit" class="completed"><span>Completed</span></button>
+            </div>
+            <p><span class="span"></span>task left</p>
+        </section>
+        <section class="section">
+                <!-- <div class="task-add">
+  <input type="checkbox">
+  <h3>Learn HTML & CSS</h3>
+                </div>
+                <div>
+                        <p type="submit" class="activebtn">Active</p>
+                    <i class="fa-solid fa-pen"></i>
+                    <i class="fa-solid fa-trash-can"></i>
+                </div> -->
+        </section>
+    </main>
+    <footer id="footer">
+            <p>
+                Showing<span class="footerspan"></span>
+                of<span>tasks</span>
+            </p>
+            <div id="footer-btn-div">
+                <button id="clearAll">
+  <i class="fa-solid fa-trash"></i>
+  Clear All
+</button>
+            </div>
+    </footer>
+    </div>
+    <script src="todo.js"></script>
+</body>
+</html>
