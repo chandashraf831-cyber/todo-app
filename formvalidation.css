@@ -1,0 +1,266 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
+    background: #f4f2ff;
+    color: #25243a;
+    padding: 40px 24px;
+}
+
+/* Main layout */
+.container {
+    width: 100%;
+    max-width: 1150px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 30px;
+}
+
+/* Registration form */
+#registerForm {
+    flex: 1;
+    max-width: 600px;
+    min-width: 0;
+    background: #ffffff;
+    padding: 35px;
+    border-radius: 16px;
+    box-shadow: 0 8px 30px rgba(72, 55, 160, 0.10);
+    text-align: center;
+}
+
+#registerForm > .fa-circle-user {
+    font-size: 55px;
+    color: #6147e3;
+    margin-bottom: 12px;
+}
+
+#registerForm h1 {
+    font-size: 32px;
+    color: #25176d;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    color: #81819c;
+    font-size: 16px;
+    margin-bottom: 28px;
+}
+
+.form-group {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 9px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 14px 15px;
+    border: 1px solid #d9d9ef;
+    border-radius: 9px;
+    font-size: 15px;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-group input:focus {
+    border-color: #6147e3;
+    box-shadow: 0 0 0 3px rgba(97, 71, 227, 0.12);
+}
+
+.form-group small {
+    display: block;
+    font-size: 12px;
+    margin-top: 6px;
+}
+
+.button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 9px;
+    background: #6147e3;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.button:hover {
+    background: #4d34ca;
+}
+
+.successfull {
+    margin-top: 12px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.footer-text {
+    margin-top: 20px;
+    font-size: 13px;
+    color: #77778e;
+}
+
+.footer-text a {
+    color: #6147e3;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* Registered users panel */
+#registrationuse {
+    flex: 1;
+    max-width: 450px;
+    min-width: 0;
+    padding: 25px;
+    background: #ffffff;
+    border: 1px solid #e9e5ff;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(65, 45, 150, 0.08);
+
+}
+
+.registered-Users {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 24px;
+    padding-bottom:18px;
+    border-bottom:1px solid #eeeafc;
+}
+#noUsers{
+    color:red;
+    text-align: center;
+    font-size:25px;
+    font-weight: bolder;
+}
+
+.registered-Users .fa-users {
+    font-size: 27px;
+    color: #6147e3;
+}
+
+.registered-Users h2 {
+    font-size: 21px;
+    color: #25243a;
+}
+
+.userkanameoremail {
+    flex: 1;
+}
+
+.userkanameoremail h3 {
+    font-size: 16px;
+    margin-bottom: 7px;
+    color:#30245e;
+    overflow: hidden;
+}
+
+.userkanameoremail p {
+    font-size: 13px;
+    color: #81819c;
+}
+.user{
+     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 16px;
+    margin-bottom: 12px;
+    background: #f8f7ff;
+    border: 1px solid #efecff;
+    border-radius: 12px;
+    transition: background 0.2s, transform 0.2s;
+}
+.user:hover {
+    background: #f0edff;
+    transform: translateY(-2px);
+}
+/* User row */
+.user > .userkanameoremail {
+    /* background: #f5f3ff; */
+    padding: 17px;
+    border-radius: 10px;
+    margin-bottom: 12px;
+}
+
+/* Delete button */
+.user > button {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    color: #e34865;
+    background: #fff0f2;
+    border: none;
+    border-radius: 9px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.user button:hover {
+    background: #ffdce2;
+}
+/* Responsive layout */
+@media (max-width: 800px) {
+    body {
+        padding: 24px 14px;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 22px;
+    }
+
+    #registerForm,
+    #registrationuse {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    #registerForm {
+        padding: 26px 20px;
+    }
+
+    #registerForm h1 {
+        font-size: 27px;
+    }
+
+    .registered-Users h2 {
+        font-size: 21px;
+    }
+}
+
+@media (max-width: 380px) {
+    #registerForm {
+        padding: 22px 15px;
+    }
+
+    #registerForm h1 {
+        font-size: 24px;
+    }
+
+    #registrationuse {
+        padding: 18px;
+    }
+}
